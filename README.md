@@ -1,7 +1,6 @@
 ![Legacy Edition Banner](.github/banner.png)
 # MinecraftConsoles (Legacy Console Edition Frozen In Time)
 
-[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?logo=discord&logoColor=white)](https://discord.gg/jrum7HhegA)
 
 This project is based on source code of Minecraft Legacy Console Edition v1.6.0560.0 (TU19) with some fixes and improvements applied and no added features such as modern blocks, or armorsets.
 

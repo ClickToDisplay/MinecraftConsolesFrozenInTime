@@ -1,18 +1,12 @@
 ![Legacy Edition Banner](.github/banner.png)
-# MinecraftConsoles (Legacy Console Edition)
+# MinecraftConsoles (Legacy Console Edition Frozen In Time)
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?logo=discord&logoColor=white)](https://discord.gg/jrum7HhegA)
 
-This project is based on source code of Minecraft Legacy Console Edition v1.6.0560.0 (TU19) with some fixes and improvements applied. 
+This project is based on source code of Minecraft Legacy Console Edition v1.6.0560.0 (TU19) with some fixes and improvements applied and no added features such as modern blocks, or armorsets.
 
-The current goal of MinecraftConsoles is to be a multi-platform base for further development, such as modding, backports, and anything else LCE. On top of that, we're working to make this a quality experience on Desktop with or without a controller while (long-term) retaining console support. 
+The current goal of MinecraftConsoles Frozen In Time is to keep the game exactly as it is with only bug fixes. If you want modern features go play the modern game.
 
-See our our [Contributor's Guide](./CONTRIBUTING.md) for more information on the goals of this project.
-
-## Download
-Windows users can download our [Nightly Build](https://github.com/smartcmd/MinecraftConsoles/releases/tag/nightly)! Simply download the `.zip` file and extract it to a folder where you'd like to keep the game. You can set your username in `username.txt` (you'll have to make this file)
-
-If you're looking for Dedicated Server software, download its [Nightly Build here](https://github.com/smartcmd/MinecraftConsoles/releases/tag/nightly-dedicated-server). Similar instructions to the client more or less, though see further down in this README for more info on that.
 
 ## Platform Support
 
@@ -88,35 +82,6 @@ LAN multiplayer is available on the Windows build
 
 Parts of this feature are based on code from [LCEMP](https://github.com/LCEMP/LCEMP) (thanks!)
 
-# Dedicated Server Software
-
-
-## Dedicated Server in Docker (Wine)
-
-This repository includes a lightweight Docker setup for running the Windows dedicated server under Wine.
-### Quick Start (No Build, Recommended)
-
-No local build is required. The container image is pulled from GHCR.
-
-```bash
-./start-dedicated-server.sh
-```
-
-`start-dedicated-server.sh` does the following:
-- uses `docker-compose.dedicated-server.ghcr.yml`
-- pulls latest image, then starts the container
-
-If you want to skip pulling and just start:
-
-```bash
-./start-dedicated-server.sh --no-pull
-```
-
-Equivalent manual command:
-
-```bash
-docker compose -f docker-compose.dedicated-server.ghcr.yml up -d
-```
 
 ### Local Build Mode (Optional)
 
@@ -214,11 +179,3 @@ cmake -S . -B build -G "Visual Studio 17 2022" -A x64
 cmake --build build --config Debug --target MinecraftClient
 ```
 
-For more information, see [COMPILE.md](COMPILE.md).
-
-## Contributors
-Would you like to contribute to this project? Please read our [Contributor's Guide](CONTRIBUTING.md) before doing so! This document includes our current goals, standards for inclusions, rules, and more.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=smartcmd/MinecraftConsoles&type=date&legend=top-left)](https://www.star-history.com/?spm=a2c6h.12873639.article-detail.7.7b9d7fabjNxTRk#smartcmd/MinecraftConsoles&type=date&legend=top-left)
